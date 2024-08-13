@@ -1,20 +1,23 @@
-import React, { Suspense, lazy } from 'react';
+// Frontends/Container/src/App.js
+import React from 'react';
+import RelojApp from 'reloj-app';
+import ClimaApp from 'clima-app';
 
-const RelojComponent = lazy(() => import('reloj/RelojComponent'));
-const ClimaComponent = lazy(() => import('clima/ClimaComponent'));
 
-function App() {
-    return (
-        <div>
-            <h1>Main Application</h1>
-            <Suspense fallback={<div>Loading Reloj...</div>}>
-                <RelojComponent />
-            </Suspense>
-            <Suspense fallback={<div>Loading Clima...</div>}>
-                <ClimaComponent />
-            </Suspense>
-        </div>
-    );
+function ContainerApp() {
+  return (
+    <div>
+      <h1>Aplicación Container</h1>
+      <div>
+        <h2>Aplicación de Reloj</h2>
+        <RelojApp />
+      </div>
+      <div>
+        <h2>Aplicación de Clima</h2>
+        <ClimaApp />
+      </div>
+    </div>
+  );
 }
 
-export default App;
+export default ContainerApp;

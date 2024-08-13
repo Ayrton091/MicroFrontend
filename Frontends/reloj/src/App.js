@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function App() {
+function RelojApp() {
     const [time, setTime] = useState('');
 
     useEffect(() => {
@@ -18,4 +18,4 @@ function App() {
     );
 }
 
-export default App;
+export default RelojApp;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function App() {
+function ClimaApp() {
     const [weather, setWeather] = useState({});
 
     useEffect(() => {
@@ -12,13 +12,13 @@ function App() {
 
     return (
         <div>
-            <h1>Weather Data</h1>
-            <p>Temperature: {weather.temperature}°C</p>
-            <p>Condition: {weather.condition}</p>
-            <p>Location: {weather.location}</p>
-            <p>Humidity: {weather.humidity}%</p>
-        </div>
+        <h1>Weather Data</h1>
+        <p>Temperature: {weather.temperature}°C</p>
+        <p>Condition: {weather.condition}</p>
+        <p>Location: {weather.location}</p>
+        <p>Humidity: {weather.humidity}%</p>
+    </div>
     );
 }
 
-export default App;
+export default ClimaApp;
